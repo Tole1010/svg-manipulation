@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: whitesmoke;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.input-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container #numberVal {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btn-container button {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: x-large;
+  transition: all 0.3s ease-in-out;
+  transition-property: scale, color, background-color;
+}
+
+#svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+@media (hover: hover) {
+  .btn-container button:hover {
+    scale: 1.1;
+    color: whitesmoke;
+    background-color: black;
+  }
+}
