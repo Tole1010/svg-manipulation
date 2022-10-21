@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  background: whitesmoke;
+  /* background: #4cbfa6; */
+  background: #f4d8ae;
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -20,6 +21,7 @@ body {
 }
 
 .btn-container button {
+  background-color: transparent;
   width: 50px;
   height: 50px;
   margin: 10px;
@@ -30,10 +32,27 @@ body {
 }
 
 #svg {
+  width: 30%;
+  height: 50%;
+}
+
+.curve-container {
+  margin: 15px;
   position: absolute;
   left: 50%;
   top: 50%;
   translate: -50% -50%;
+  width: 400px;
+  height: 300px;
+  background-image: url("./assets/jojo.png");
+  background-size: cover;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* filter: drop-shadow(0 0 10rem red); */
+  box-shadow: 6px 6px 12px -3px rgba(0, 0, 0, 0.75);
 }
 
 @media (hover: hover) {
