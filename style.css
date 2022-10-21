@@ -7,12 +7,29 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  min-width: 400px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-container {
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 .input-container #numberVal {
@@ -38,10 +55,6 @@ body {
 
 .curve-container {
   margin: 15px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
   width: 400px;
   height: 300px;
   background-image: url("./assets/jojo.png");
@@ -51,7 +64,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* filter: drop-shadow(0 0 10rem red); */
   box-shadow: 6px 6px 12px -3px rgba(0, 0, 0, 0.75);
 }
 
